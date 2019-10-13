@@ -69,3 +69,4 @@ function placeOrder(cardNumber) {
 return cart;
   }
 
+placeOrder();
