@@ -49,11 +49,12 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for (var i = 0; i < cart.length; i += 1) 
+  for (var i = 0; i < cart.length; i += 1) {
     if (Object.keys(cart[i]) === item) {
       cart = [...cart.slice(0, i), ... cart.slice(i + 1)];
       return cart;
     }
+  }
     console.log('That item is not in your cart.')
     return cart;
 }
